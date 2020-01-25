@@ -5,39 +5,57 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-.header{
-    background: #DDD8C4;
-    margin: auto;
-    /* max-width: 1000px; */
+
+#topnav
+{
+	background: #DDD8C4;
+    display: block;
+    height: 50px;
+    text-transform: uppercase;
+    position: static;
 }
-.menu{
+#topnav >h1{
+    float: left;
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 60px;
+
+}
+#logo{
+font-size: 30px;
+clear: both;
+}
+ .menu
+{
+    text-align: right;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu > li
+{
     display: inline-block;
 }
-.logo{
-    font-size: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-left: 1em;
-    text-shadow: 3px 3px 15px #A3C9A8;
-}
-.nav{
-    float: right;
-    margin: 20px;
-}
-.nav>a{
+.menu a
+{
+    position: relative;
+    top:15px;
+    right:60px;
+    font-weight: 900 ;
+    margin-left: 10px;
     text-decoration: none;
-    font-weight: 700;
-    color: #216869;
-    text-transform: uppercase;
-    margin: 5px;
-    padding: 10px;
+    color: black;
+    padding: 5px;
     transition: all 1s;
+}
+
+.menu a:hover
+{
+    background:#A3C9A8;
     border-radius: 5px;
 }
-.nav>a:hover{
-    background: #A3C9A8;
-}
+
 .welcomePage{
     clear: both;
     width: 100%;
@@ -45,4 +63,12 @@
     background:url(./images/book-stack-3964568_1280.jpg);
     background-size: cover;
     background-position: center;
+    z-index: 0;
+     overflow: hidden;
+}
+#filtrKoloru{
+    height: 100%;
+    background:#70A288;
+    opacity: 0.3;
+    z-index: 2;
 }
