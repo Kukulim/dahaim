@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding: 0;
@@ -5,9 +6,9 @@
     font-family: 'Roboto', sans-serif;
 }
 .header{
-    background: #DCE1DE;
+    background: #DDD8C4;
     margin: auto;
-    max-width: 1000px;
+    /* max-width: 1000px; */
 }
 .menu{
     display: inline-block;
@@ -18,6 +19,7 @@
     font-family: 'Bangers', cursive;
     letter-spacing: 5px;
     margin-left: 1em;
+    text-shadow: 3px 3px 15px #A3C9A8;
 }
 .nav{
     float: right;
@@ -27,4 +29,13 @@
     text-decoration: none;
     color: #216869;
     text-transform: uppercase;
+    margin: 15px;
+}
+.welcomePage{
+    clear: both;
+    width: 100%;
+    height: 700px;
+    background:url(./images/book-stack-3964568_1280.jpg);
+    background-size: cover;
+    background-position: center;
 }
