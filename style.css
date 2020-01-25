@@ -57,18 +57,22 @@ clear: both;
 }
 
 .welcomePage{
-    clear: both;
     width: 100%;
     height: 700px;
     background:url(./images/book-stack-3964568_1280.jpg);
     background-size: cover;
     background-position: center;
     z-index: 0;
-     overflow: hidden;
+
 }
 #filtrKoloru{
     height: 100%;
     background:#70A288;
     opacity: 0.3;
-    z-index: 2;
+    z-index: -2;
+}
+#napisSzkola{
+    background: red;
+    opacity: 1;
+    z-index: 4;
 }
