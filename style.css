@@ -92,7 +92,7 @@ header {
 }
 /* First Page: */
 .welcomePage {
-  min-height: 500px;
+  min-height: 700px;
   background: url(./images/welcomebook.jpg) no-repeat;
   background-size: cover;
 }
@@ -144,7 +144,6 @@ header {
   width: 60%;
   margin: auto;
   overflow: hidden;
-  /* background: blue; */
 }
 .oferta{
   height: 1200px;
@@ -180,10 +179,10 @@ header {
   width: 50%;
 }
 
-
 /* Cytat */
+
 .cytat{
-  height: 400px;
+  height: 600px;
   background: url(./images/library-3185061_1280.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -195,7 +194,9 @@ header {
 .cytatText h4{
   margin-top: 15%;
 }
+
 /* Opinie Page */
+
 .opinia {
   height: 700px;
   background: var(--lightvnilla);
@@ -222,4 +223,66 @@ header {
   max-height: 16vh;
   margin-top: 20px;
   border-radius: 100%;
+}
+/* KONTAKT */
+.kontakt{
+  background: var(--darkBlue);
+  height: 650px;
+  text-decoration: none;
+}
+.naglowekKontakt{
+  text-align: center;
+  color: var(--lightvnilla);
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+#mapa{
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.formularz{
+  float: left;
+  background-color: var(--vanilla);
+  color: var(--darkBlue);
+  height: 400px;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.boxKontakt{
+  float: left;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  
+}
+.formularz ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+input{
+  display: block;
+  width: 100%;
+}
+textarea{
+  width: 99%;
+}
+
+.boxKontakt button{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 45px;
+  
+}
+.daneKontakt{
+  float: left;
+  margin-left: 40px;
+  min-width: 350px;
+  height: 400px;
+  color:var(--vanilla);
+  border-bottom: var(--midnight) solid 3 px;
 }
