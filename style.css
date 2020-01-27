@@ -1,110 +1,159 @@
-
 /* GLOBAL: */
 /* Colors: */
-:root{
---vanilla: #CCC9A1;
---midnight: #631D76;
---blue: #476C9B;
---lightBlue: #468C98;
---darkBlue: #101419;
+:root {
+  --vanilla: #ccc9a1;
+  --midnight: #631d76;
+  --blue: #476c9b;
+  --lightBlue: #468c98;
+  --darkBlue: #101419;
 }
 /* styles: */
-body{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-.conteiner{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    /* background: blue; */
+.conteiner {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  /* background: blue; */
 }
-a{
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
 }
-
-.button1{
-    padding: 10px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 700;
-    border-radius: 5px;
-    border: 1px solid var(--vanilla) ;
-    background: var(--midnight);
-    transition: all 0.2s;
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
-.button1:hover{
-    padding: 13px;
-    transform: rotateZ(5deg);
-    overflow: visible;
+.button1 {
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid var(--vanilla);
+  background: var(--midnight);
+  transition: all 0.2s;
+}
+
+.button1:hover {
+  padding: 13px;
+  transform: rotateZ(5deg);
+  overflow: visible;
 }
 
 /* Hedder: */
-header{
-    background: var(--darkBlue);
-    min-height: 70px;
+header {
+  background: var(--darkBlue);
+  min-height: 70px;
 }
-#logo{
-    float: left;
-    color: var(--vanilla);
-    text-transform: uppercase;
-    font-size: 25px;
-    background:var(--midnight);
-    padding: 10px;
+#logo {
+  float: left;
+  color: var(--vanilla);
+  text-transform: uppercase;
+  font-size: 25px;
+  background: var(--midnight);
+  padding: 10px;
+  margin-top: 10px;
 }
-.menu{
-    float: right;
-    margin-top: 25px;
-    text-transform: uppercase;
-    margin-top: 35px;
+.menu {
+  float: right;
+  margin-top: 25px;
+  text-transform: uppercase;
+  margin-top: 25px;
 }
-.menu li{
-    float: left;
-    display: inline;
-    margin-left: 10px;
+.menu li {
+  float: left;
+  display: inline;
+  margin-left: 10px;
 }
-.menu a{
-    color: white;
-    padding: 3px;
-    transition: all 0.5s;
+.menu a {
+  color: white;
+  padding: 3px;
+  transition: all 0.5s;
 }
-.menu a:hover{
-    background-color: var(--lightBlue);
-    border-radius: 5px;
-    color: var(--darkBlue);
+.menu a:hover {
+  background-color: var(--lightBlue);
+  border-radius: 5px;
+  color: var(--darkBlue);
 }
-#logoFirst{
-    color: var(--lightBlue);
+#logoFirst {
+  color: var(--lightBlue);
 }
 /* First Page: */
-.welcomePage{
-    min-height: 500px;
-    background: url(./images/welcomebook.jpg);
+.welcomePage {
+  min-height: 500px;
+  background: url(./images/welcomebook.jpg) no-repeat;
+  background-size: cover;
 }
-#slogan{
-    color:var(--vanilla);
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 4px 4px 9px var(--midnight);
-    margin-top: 15%;
+#slogan {
+  color: var(--vanilla);
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 4px 4px 9px var(--midnight);
+  margin-top: 15%;
 }
-.welcomePage p{
-    margin-top: 10%;
-    text-align: center;
+.welcomePage p {
+  margin-top: 10%;
+  text-align: center;
 }
-.welcomePage button{
-    display: block;
-    margin-top: 5%;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+.welcomePage button {
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* O mnie */
+.omnie {
+  min-height: 400px;
+  height: 500px;
+  background: var(--vanilla);
+}
+.omnie img {
+  margin-top: 65px;
+  margin-right: 30px;
+  float: left;
+  width: 40%;
+  min-width: 300px;
+}
+.boxOmnie {
+  margin-top: 60px;
+  float: right;
+  width: 50%;
+  min-width: 300px;
+}
+.boxOmnie h1 {
+  font-size: 30px;
+}
+.boxOmnie p {
+  text-align: justify;
+}
+/* Oferta Page */
+.oferta {
+  height: 700px;
+}
+#naglowekOferta {
+  margin-top: 65px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.table {
+  float: left;
+  text-align: center;
+  width: 30%;
+  min-width: 200px;
+  padding: 10px;
+  background: var(--vanilla);
+  margin-left: 10px;
 }
