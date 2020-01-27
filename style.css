@@ -1,86 +1,70 @@
+
+/* GLOBAL: */
+/* Colors: */
+:root{
+--vanilla: #CCC9A1;
+--midnight: #631D76;
+--blue: #476C9B;
+--lightBlue: #468C98;
+--darkBlue: #101419;
+}
+/* styles: */
 body{
-    background: #DDD8C4;
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
-#topnav
-{
-    display: block;
-    height: 50px;
-    text-transform: uppercase;
-    position: static;
+.conteiner{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    /* background: blue; */
 }
-#topnav >h1{
-    float: left;
-    margin-top: 7px;
-    margin-left: 60px;
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
 
+/* Hedder: */
+header{
+    background: var(--darkBlue);
+    min-height: 70px;
 }
 #logo{
-font-size: 30px;
-clear: both;
+    float: left;
+    color: var(--vanilla);
+    text-transform: uppercase;
+    font-size: 25px;
+    background:var(--midnight);
+    padding: 10px;
 }
- .menu
-{
-    text-align: right;
-    color: black;
-    text-decoration: none;
-    list-style-type: none;
+.menu{
+    float: right;
+    margin-top: 25px;
+    text-transform: uppercase;
+    margin-top: 35px;
 }
-
-.menu > li
-{
-    display: inline-block;
-}
-.menu a
-{
-    position: relative;
-    top:15px;
-    right:60px;
-    font-weight: 900 ;
+.menu li{
+    float: left;
+    display: inline;
     margin-left: 10px;
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    transition: all 1s;
 }
-
-.menu a:hover
-{
-    background:#A3C9A8;
+.menu a{
+    color: white;
+    padding: 3px;
+    transition: all 0.5s;
+}
+.menu a:hover{
+    background-color: var(--lightBlue);
     border-radius: 5px;
+    color: var(--darkBlue);
 }
-.clear{
-    clear: both;
-}
-
-.welcomePage{
-
-    width: 100%;
-    height: 700px;
-    background:url(./images/book-stack-3964568_1280.jpg);
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-    border: black solid 2 px;;
-
-}
-/* #filtrKoloru{
-    height: 100%;
-    background:#70A288;
-    mix-blend-mode: screen;
-    z-index: 2;
-} */
-#napisSzkola{
-    display: block;
-    margin:40px;
-    width: 500px; 
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background: red;
-    z-index: -4;
+#logoFirst{
+    color: var(--lightBlue);
 }
