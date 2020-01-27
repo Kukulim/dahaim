@@ -1,79 +1,309 @@
-
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+/* GLOBAL: */
+/* Colors: */
+:root {
+  --vanilla: #ccc9a1;
+  --lightvnilla: #FAF3DD;
+  --midnight: #631d76;
+  --purple: rgb(10, 0, 8);
+  --blue: #476c9b;
+  --lightBlue: #468c98;
+  --darkBlue: #101419;
+}
+/* styles: */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.conteiner {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  /* background: blue; */
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
-#topnav
-{
-	background: #DDD8C4;
-    display: block;
-    height: 50px;
-    text-transform: uppercase;
-    position: static;
-}
-#topnav >h1{
-    float: left;
-    text-align: center;
-    margin-top: 7px;
-    margin-left: 60px;
-
-}
-#logo{
-font-size: 30px;
-clear: both;
-}
- .menu
-{
-    text-align: right;
-    color: black;
-    text-decoration: none;
-    list-style-type: none;
+.button1 {
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid var(--vanilla);
+  background: var(--midnight);
+  transition: all 0.2s;
 }
 
-.menu > li
-{
-    display: inline-block;
-}
-.menu a
-{
-    position: relative;
-    top:15px;
-    right:60px;
-    font-weight: 900 ;
-    margin-left: 10px;
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    transition: all 1s;
+.button1:hover {
+  padding: 13px;
+  transform: rotateZ(5deg);
+  overflow: visible;
 }
 
-.menu a:hover
-{
-    background:#A3C9A8;
-    border-radius: 5px;
+/* Hedder: */
+header {
+  background: var(--darkBlue);
+  min-height: 70px;
+}
+#logo {
+  float: left;
+  color: var(--vanilla);
+  text-transform: uppercase;
+  font-size: 25px;
+  background: var(--midnight);
+  padding: 10px;
+  margin-top: 10px;
+}
+.menu {
+  float: right;
+  margin-top: 25px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.menu li {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+}
+.menu a {
+  color: var(--lightvnilla);
+  padding: 3px;
+  transition: all 0.5s;
+}
+.menu a:hover {
+  background-color: var(--lightBlue);
+  border-radius: 5px;
+  color: var(--darkBlue);
+}
+#logoFirst {
+  color: var(--lightBlue);
+}
+/* First Page: */
+.welcomePage {
+  min-height: 700px;
+  background: url(./images/welcomebook.jpg) no-repeat;
+  background-size: cover;
+}
+#slogan {
+  color: var(--vanilla);
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 4px 4px 9px var(--midnight);
+  margin-top: 15%;
+}
+.welcomePage p {
+  margin-top: 10%;
+  text-align: center;
+}
+.welcomePage button {
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* O mnie */
+.omnie {
+  min-height: 400px;
+  height: 500px;
+  background: var(--lightvnilla);
+}
+.omnie img {
+  margin-top: 65px;
+  margin-right: 30px;
+  float: left;
+  width: 40%;
+  min-width: 300px;
+}
+.boxOmnie {
+  margin-top: 60px;
+  float: right;
+  width: 50%;
+  min-width: 300px;
+}
+.boxOmnie h1 {
+  font-size: 30px;
+}
+.boxOmnie p {
+  text-align: justify;
+}
+/* Oferta Page */
+.conteiner2 {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+.oferta{
+  height: 1200px;
+}
+#naglowekOferta{
+  margin-top: 65px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.oferta img{
+  max-height: 250px;
+  margin: 15px;
+}
+.ofertaBoxLewo img{
+  float: left;
+}
+.ofertaBoxLewo{
+  height: 300px;
+  background-color: var(--lightvnilla);
+  border-radius: 10px;
+}
+.ofertaBoxPrawo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  height: 300px;
+  text-align: right;
+  background: rgb(250,243,221);
+  
+}
+.ofertaBoxPrawo img{
+  float: right;
+}
+.box1{
+  float:left;
+  width: 50%;
+}
+.box2{
+  float:right;
+  width: 50%;
 }
 
-.welcomePage{
-    width: 100%;
-    height: 700px;
-    background:url(./images/book-stack-3964568_1280.jpg);
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-    border: black solid 2 px;;
+/* Cytat */
+
+.cytat{
+  height: 600px;
+  background: url(./images/library-3185061_1280.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.cytatText{
+  text-align: center;
+  color: aliceblue;
+}
+.cytatText h4{
+  margin-top: 20%;
+}
+
+/* Opinie Page */
+
+.opinia {
+  height: 700px;
+  background: var(--lightvnilla);
+}
+#naglowekOpinie {
+  margin-top: 65px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.table {
+  float: left;
+  text-align: center;
+  width: 30%;
+  min-width: 200px;
+  padding: 10px;
+  background: var(--vanilla);
+  margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
+  margin-bottom: 20px
 
 }
-#filtrKoloru{
-    height: 100%;
-    background:#70A288;
-    mix-blend-mode: screen;
-    z-index: 2;
+.table img{
+  max-height: 16vh;
+  margin-top: 20px;
+  border-radius: 100%;
 }
-#napisSzkola{
-    display: flex;
-    background: red;
-    z-index: 4;
+/* KONTAKT */
+.kontakt{
+  background: var(--darkBlue);
+  height: 650px;
+  text-decoration: none;
 }
+.naglowekKontakt{
+  text-align: center;
+  color: var(--lightvnilla);
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+#mapa{
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.formularz{
+  float: left;
+  background-color: var(--vanilla);
+  color: var(--darkBlue);
+  height: 400px;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.boxKontakt{
+  float: left;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  
+}
+.formularz ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+input{
+  display: block;
+  width: 100%;
+}
+textarea{
+  width: 99%;
+}
+
+.boxKontakt button{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 45px;
+  
+}
+.daneKontakt{
+  float: left;
+  margin-left: 40px;
+  min-width: 350px;
+  height: 400px;
+  color:var(--vanilla);
+}
+
+/* FOTTER */
+footer{
+  font-size: 20px;
+  border-top: 3px solid var(--midnight);
+  background: var(--purple);
+  color: var(--lightvnilla);
+  text-align: center;
+}
+.formularz button{
+  border: 1px solid var(--purple);
+}
+
