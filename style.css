@@ -31,6 +31,23 @@ ul{
     padding: 0;
 }
 
+.button1{
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid var(--vanilla) ;
+    background: var(--midnight);
+    transition: all 0.2s;
+}
+
+.button1:hover{
+    padding: 13px;
+    transform: rotateZ(5deg);
+    overflow: visible;
+}
+
 /* Hedder: */
 header{
     background: var(--darkBlue);
@@ -67,4 +84,27 @@ header{
 }
 #logoFirst{
     color: var(--lightBlue);
+}
+/* First Page: */
+.welcomePage{
+    min-height: 500px;
+    background: url(./images/welcomebook.jpg);
+}
+#slogan{
+    color:var(--vanilla);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 4px 9px var(--midnight);
+    margin-top: 15%;
+}
+.welcomePage p{
+    margin-top: 10%;
+    text-align: center;
+}
+.welcomePage button{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
