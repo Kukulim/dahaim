@@ -4,6 +4,7 @@
   --vanilla: #ccc9a1;
   --lightvnilla: #FAF3DD;
   --midnight: #631d76;
+  --purple: rgb(10, 0, 8);
   --blue: #476c9b;
   --lightBlue: #468c98;
   --darkBlue: #101419;
@@ -78,7 +79,7 @@ header {
   margin-left: 10px;
 }
 .menu a {
-  color: white;
+  color: var(--lightvnilla);
   padding: 3px;
   transition: all 0.5s;
 }
@@ -162,10 +163,17 @@ header {
 }
 .ofertaBoxLewo{
   height: 300px;
+  background-color: var(--lightvnilla);
+  border-radius: 10px;
 }
 .ofertaBoxPrawo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
   height: 300px;
   text-align: right;
+  background: rgb(250,243,221);
+  
 }
 .ofertaBoxPrawo img{
   float: right;
@@ -192,7 +200,7 @@ header {
   color: aliceblue;
 }
 .cytatText h4{
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 /* Opinie Page */
@@ -217,6 +225,7 @@ header {
   margin-left: 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
+  margin-bottom: 20px
 
 }
 .table img{
@@ -290,8 +299,11 @@ textarea{
 footer{
   font-size: 20px;
   border-top: 3px solid var(--midnight);
-  background: rgb(10, 0, 8);
+  background: var(--purple);
   color: var(--lightvnilla);
   text-align: center;
+}
+.formularz button{
+  border: 1px solid var(--purple);
 }
 
