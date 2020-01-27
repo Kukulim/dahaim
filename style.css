@@ -156,4 +156,25 @@ header {
   padding: 10px;
   background: var(--vanilla);
   margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
+
+}
+.table img{
+  max-height: 16vh;
+  margin-top: 20px;
+}
+/* Cytat */
+.cytat{
+  height: 400px;
+  background: url(./images/library-3185061_1280.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.cytatText{
+  text-align: center;
+  color: aliceblue;
+}
+.cytatText h4{
+  margin-top: 15%;
 }
