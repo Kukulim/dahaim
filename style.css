@@ -67,7 +67,8 @@ header {
 }
 .menu {
   text-transform: uppercase;
-}
+} 
+
 .nav-item a {
   color: var(--vanilla);
 }
