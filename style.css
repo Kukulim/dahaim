@@ -114,29 +114,9 @@ header {
 }
 /* O mnie */
 .omnie {
-  min-height: 400px;
-  height: 500px;
   background: var(--lightvnilla);
 }
-.omnie img {
-  margin-top: 65px;
-  margin-right: 30px;
-  float: left;
-  width: 40%;
-  min-width: 300px;
-}
-.boxOmnie {
-  margin-top: 60px;
-  float: right;
-  width: 50%;
-  min-width: 300px;
-}
-.boxOmnie h1 {
-  font-size: 30px;
-}
-.boxOmnie p {
-  text-align: justify;
-}
+
 /* Oferta Page */
 .conteiner2 {
   width: 60%;
