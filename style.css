@@ -123,19 +123,20 @@ header {
 /* Cytat */
 
 .cytat {
-  height: 600px;
   background: url(./images/library-3185061_1280.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   text-shadow: 3px 3px 4px black;
 }
 .cytatText {
+  height: 400px;
   text-align: center;
   color: aliceblue;
 }
-.cytatText h4 {
-  margin-top: 20%;
+.cytatbox{
+  margin-top:150px;
 }
+
 
 /* Opinie Page */
 
