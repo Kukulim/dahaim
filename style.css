@@ -118,50 +118,7 @@ header {
 }
 
 /* Oferta Page */
-.conteiner2 {
-  width: 60%;
-  margin: auto;
-  overflow: hidden;
-}
-.oferta {
-  height: 1200px;
-}
-#naglowekOferta {
-  margin-top: 65px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.oferta img {
-  max-height: 250px;
-  margin: 15px;
-}
-.ofertaBoxLewo img {
-  float: left;
-}
-.ofertaBoxLewo {
-  height: 300px;
-  background-color: var(--lightvnilla);
-  border-radius: 10px;
-}
-.ofertaBoxPrawo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  height: 300px;
-  text-align: right;
-  background: rgb(250, 243, 221);
-}
-.ofertaBoxPrawo img {
-  float: right;
-}
-.box1 {
-  float: left;
-  width: 50%;
-}
-.box2 {
-  float: right;
-  width: 50%;
-}
+
 
 /* Cytat */
 
