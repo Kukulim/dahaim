@@ -9,6 +9,9 @@
   --lightBlue: #468c98;
   --darkBlue: #101419;
 }
+li{
+  list-style-type: none;
+}
 /* styles: */
 body {
   margin: 0;
@@ -150,62 +153,25 @@ header {
 }
 
 /* KONTAKT */
-.kontakt {
-  background: var(--darkBlue);
-  height: 650px;
-  text-decoration: none;
+.kontakt{
+  background-color: var(--darkBlue);
 }
 .naglowekKontakt {
-  text-align: center;
   color: var(--lightvnilla);
-  margin-top: 65px;
-  margin-bottom: 50px;
-}
-#mapa {
-  float: left;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.formularz {
-  float: left;
-  background-color: var(--vanilla);
-  color: var(--darkBlue);
-  height: 400px;
-  width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.boxKontakt {
-  float: left;
-  width: 90%;
-  height: 90%;
-  margin: 5%;
-}
-.formularz ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 input {
-  display: block;
   width: 100%;
+  min-width: 300px;
 }
 textarea {
-  width: 99%;
+  width: 100%;
 }
-
-.boxKontakt button {
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 45px;
+.daneKontaktowe {
+  color: var(--vanilla);
 }
-.daneKontakt {
-  float: left;
-  margin-left: 40px;
-  min-width: 350px;
-  height: 400px;
+.boxKontakt{
   color: var(--vanilla);
 }
 
@@ -221,10 +187,15 @@ footer {
   border: 1px solid var(--purple);
 }
 
+/* MEDIA */
+
 @media only screen and (max-width: 576px) {
   #opiniebox{
     height: 1150px;
   }
+  /* #kontaktBox{
+    height: 1200px;
+  } */
 }
 @media only screen and (max-width: 768px) {
 .opisOpinia{
